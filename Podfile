@@ -1,0 +1,22 @@
+platform:ios,'8.0'
+target 'MovieFans' do
+pod 'AFNetworking'
+pod 'SDWebImage'
+pod 'MBProgressHUD'
+pod 'SVProgressHUD'
+pod 'KVNProgress'
+pod 'MJExtension'
+pod 'MJRefresh'
+pod 'ASProgressPopUpView'
+pod 'ASValueTrackingSlider'
+pod 'JSAnimatedImagesView'
+pod 'BmobSDK','1.6.5'
+pod 'FMDB'
+pod 'Masonry'
+pod 'MJPhotoBrowser'
+pod 'FDFullscreenPopGesture'
+pod 'FXBlurView'
+pod 'SDAutoLayout'
+pod 'YYModel'
+pod "WeiboSDK", :git => "https://github.com/sinaweibosdk/weibo_ios_sdk.git"
+end

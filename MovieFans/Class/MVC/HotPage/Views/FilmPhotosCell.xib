@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="179" id="KGk-i7-Jjw" customClass="FilmPhotosCell">
+            <rect key="frame" x="0.0" y="0.0" width="396" height="179"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="396" height="178"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kqs-Ss-e4o">
+                        <color key="backgroundColor" red="0.92344583010000003" green="0.93228064180000003" blue="0.98465835209999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="PW5-Hj-3JB"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LRT-4r-ynx">
+                        <color key="backgroundColor" red="0.14007815918387201" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="5" id="2ds-4X-irg"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="剧照" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BRA-bk-yes">
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="30" id="IEy-eM-Jfv"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qtj-Wm-PsY">
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="uxi-LJ-LIW"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.82865804509999996" green="0.83842333680000003" blue="0.88672590259999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jwv-n4-D9k"/>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="kqs-Ss-e4o" firstAttribute="top" secondItem="BRA-bk-yes" secondAttribute="bottom" constant="5" id="1aO-Y1-5iW"/>
+                    <constraint firstItem="BRA-bk-yes" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="5" id="8G8-UG-dQh"/>
+                    <constraint firstItem="kqs-Ss-e4o" firstAttribute="top" secondItem="LRT-4r-ynx" secondAttribute="bottom" constant="8" id="Awd-GI-VAW"/>
+                    <constraint firstItem="kqs-Ss-e4o" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="40" id="FSl-wb-Qof"/>
+                    <constraint firstItem="jwv-n4-D9k" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="FXm-bJ-Z4L"/>
+                    <constraint firstItem="Qtj-Wm-PsY" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="5" id="MKG-hz-Iwn"/>
+                    <constraint firstAttribute="trailing" secondItem="jwv-n4-D9k" secondAttribute="trailing" id="NeI-TY-CYi"/>
+                    <constraint firstItem="kqs-Ss-e4o" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="OTc-lJ-o4J"/>
+                    <constraint firstItem="LRT-4r-ynx" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="8" id="PVa-VS-k0A"/>
+                    <constraint firstItem="BRA-bk-yes" firstAttribute="leading" secondItem="LRT-4r-ynx" secondAttribute="trailing" constant="5" id="VfJ-4x-3yu"/>
+                    <constraint firstAttribute="bottom" secondItem="jwv-n4-D9k" secondAttribute="bottom" id="XS5-rM-F45"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Qtj-Wm-PsY" secondAttribute="trailing" constant="10" id="cCE-CH-qjP"/>
+                    <constraint firstAttribute="trailing" secondItem="kqs-Ss-e4o" secondAttribute="trailing" id="hML-TA-yHZ"/>
+                    <constraint firstItem="kqs-Ss-e4o" firstAttribute="top" secondItem="Qtj-Wm-PsY" secondAttribute="bottom" constant="6" id="n8S-Jf-zqR"/>
+                    <constraint firstItem="LRT-4r-ynx" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="rbS-wl-saW"/>
+                    <constraint firstItem="jwv-n4-D9k" firstAttribute="top" secondItem="kqs-Ss-e4o" secondAttribute="bottom" id="rzH-lc-syO"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="filePhotoScrollView" destination="jwv-n4-D9k" id="4JE-pO-Dz6"/>
+                <outlet property="numberOfFilePhotos" destination="Qtj-Wm-PsY" id="YN1-L9-kQK"/>
+            </connections>
+            <point key="canvasLocation" x="252" y="321.5"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="145" id="KGk-i7-Jjw" customClass="RelationMovieCell">
+            <rect key="frame" x="0.0" y="0.0" width="386" height="145"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="386" height="144.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dPW-5E-Mxf">
+                        <color key="backgroundColor" red="0.92344583010000003" green="0.93228064180000003" blue="0.98465835209999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="hHM-0s-MFB"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zba-VN-6Zq" customClass="RelationMovieCell">
+                        <color key="backgroundColor" red="0.50196081399917603" green="0.0" blue="0.25098040699958801" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="5" id="MiD-xv-okM"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Owq-vL-xVY">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="250" id="gzO-HK-5Vo"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eIK-Bb-dPW"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="right" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6lA-Di-jc3">
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="zrh-Id-Adu"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.82865804509999996" green="0.83842333680000003" blue="0.88672590259999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="egD-bW-3wD">
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="egD-bW-3wD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="41n-eG-Od9"/>
+                    <constraint firstItem="Owq-vL-xVY" firstAttribute="leading" secondItem="zba-VN-6Zq" secondAttribute="trailing" constant="5" id="5YX-1j-MiB"/>
+                    <constraint firstItem="dPW-5E-Mxf" firstAttribute="top" secondItem="zba-VN-6Zq" secondAttribute="bottom" constant="8" id="61A-1d-sTo"/>
+                    <constraint firstItem="dPW-5E-Mxf" firstAttribute="top" secondItem="6lA-Di-jc3" secondAttribute="bottom" constant="6" id="8Kn-Lg-XaO"/>
+                    <constraint firstItem="egD-bW-3wD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="DxA-2W-s5j"/>
+                    <constraint firstAttribute="bottom" secondItem="eIK-Bb-dPW" secondAttribute="bottom" id="EyV-Or-NIG"/>
+                    <constraint firstItem="eIK-Bb-dPW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="GW5-Ue-k13"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="6lA-Di-jc3" secondAttribute="trailing" constant="2" id="I1G-w0-uRw"/>
+                    <constraint firstItem="6lA-Di-jc3" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="5" id="JLz-jQ-dBp"/>
+                    <constraint firstItem="dPW-5E-Mxf" firstAttribute="top" secondItem="egD-bW-3wD" secondAttribute="bottom" id="Omh-dL-Q50"/>
+                    <constraint firstItem="dPW-5E-Mxf" firstAttribute="top" secondItem="Owq-vL-xVY" secondAttribute="bottom" constant="5" id="S0x-Zg-gNu"/>
+                    <constraint firstAttribute="trailing" secondItem="eIK-Bb-dPW" secondAttribute="trailing" id="VZN-ON-G2h"/>
+                    <constraint firstItem="zba-VN-6Zq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="8" id="ZrA-TQ-CPo"/>
+                    <constraint firstItem="Owq-vL-xVY" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="5" id="giS-oK-skd"/>
+                    <constraint firstItem="dPW-5E-Mxf" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="40" id="gpq-qE-SqD"/>
+                    <constraint firstAttribute="trailing" secondItem="dPW-5E-Mxf" secondAttribute="trailing" id="gz1-ew-7cH"/>
+                    <constraint firstItem="dPW-5E-Mxf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="khd-vu-KDr"/>
+                    <constraint firstItem="eIK-Bb-dPW" firstAttribute="top" secondItem="dPW-5E-Mxf" secondAttribute="bottom" id="l1U-Uc-8sp"/>
+                    <constraint firstAttribute="trailing" secondItem="egD-bW-3wD" secondAttribute="trailing" id="vGz-L7-0YZ"/>
+                    <constraint firstItem="zba-VN-6Zq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="xal-YB-8Uv"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="cubeView" destination="zba-VN-6Zq" id="Oht-i8-kJl"/>
+                <outlet property="gestrueView" destination="egD-bW-3wD" id="XWa-zS-yui"/>
+                <outlet property="numberOfMovieLabel" destination="6lA-Di-jc3" id="E0T-B6-5ZO"/>
+                <outlet property="relationMovieScrollView" destination="eIK-Bb-dPW" id="yGY-N3-rhz"/>
+                <outlet property="titleLabel" destination="Owq-vL-xVY" id="gYo-rc-xf0"/>
+            </connections>
+            <point key="canvasLocation" x="-4" y="120"/>
+        </tableViewCell>
+    </objects>
+</document>
